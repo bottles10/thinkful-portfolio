@@ -1,3 +1,4 @@
+/* box-sizing should be same as actial value */
 * {
   box-sizing: border-box;
 }
@@ -23,7 +24,9 @@ header > h1 {
 }
 header em {
   margin-bottom: 20px;
+  font-size: large;
 }
+/* page content */
 main {
  margin: 30px auto;
  width: 50%;
@@ -37,13 +40,12 @@ main img {
 article h2 {
   font-family: futura;
 }
+/** styles for orderded and unorded list **/
 ul, ol{
-  /*list-style: inside; */
   display: inline-block;
   text-align: left;
 }
 hr {
-	/* border: 20px solid red; */
   margin-top: 50px;
   margin-bottom: 50px;
 	height: 25px;
@@ -51,7 +53,7 @@ hr {
 	transform: rotate(45deg);
   background-color: #457b9d;
 }
-/* centering div elemtnts */
+/** centering div elemtnts **/
 .wrapper {
   margin-right: auto;
   margin-left:  auto; 
@@ -61,13 +63,14 @@ hr {
   padding-right: 10px;
   padding-left:  10px;
 }
+/** centering image **/
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-/* styling links */
+/** styling links **/
 a:link{
   color: #1d3557;
 }
@@ -79,4 +82,10 @@ a:hover{
 }
 a:active {
   color: #e63946;
+}
+
+/** styling iframe of google generated map **/
+iframe {
+  display: block;
+  padding-bottom: 10px;
 }
